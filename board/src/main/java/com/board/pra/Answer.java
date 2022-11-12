@@ -20,7 +20,7 @@ public class Answer {
 		//id:어노테이션이 지정되면 기본키의 모든 특성을 가진 컬럼과 동일하게 적용
 		//Generatedvalue : 
 		@Id
-		@GeneratedValue(strategy = GenerationType.IDENTITY)
+		@GeneratedValue(strategy = GenerationType.IDENTITY) //Auto_Increment 
 		private Integer id;
 		
 		        //제한을 두지 않는다.

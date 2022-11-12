@@ -22,7 +22,6 @@ import lombok.Setter;
 @Setter
 @Entity
 public class Question {
-	
 	//id:기본키 지정
 	//id:어노테이션이 지정되면 기본키의 모든 특성을 가진 컬럼과 동일하게 적용
 	//Generatedvalue : 
@@ -43,7 +42,5 @@ public class Question {
 	
 	@OneToMany(mappedBy = "question",cascade = CascadeType.REMOVE)
 	private List<Answer> anwerList;//제네릭 표현
-	
-	
 	
 }
